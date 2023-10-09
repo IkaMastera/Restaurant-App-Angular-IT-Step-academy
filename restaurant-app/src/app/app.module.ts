@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { StarRatingComponent } from './component/partials/star-rating/star-rating.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    StarRatingComponent
+    StarRatingComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
