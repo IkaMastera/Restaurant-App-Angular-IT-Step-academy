@@ -8,6 +8,11 @@ export class FoodService {
 
   constructor() { }
 
+  getAllFoodsBySearchTerm(searchTerm: string) :Food[]{
+        return this.getAll().filter(food => 
+        food.name.toLocaleLowerCase().includes(searchTerm.toLowerCase()))
+  }
+
   getAllTags():Tag[]{
     return [
       { name: "All", count: 14 },
