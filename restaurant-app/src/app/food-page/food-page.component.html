@@ -15,7 +15,25 @@
         </div>
 
         <div class="origins">
-            <span *ngFor=""></span>
+            <span *ngFor="let origin of food.origins">
+                {{ origin }}
+            </span>
         </div>
+
+        <div class="tags">
+            <app-tags [foodPageTags]="food.tags"></app-tags>
+        </div>
+
+        <div class="cook-time">
+            <span>
+                Time to cook about <strong>{{food.cookTime}}</strong> minutes
+            </span>
+        </div>
+
+        <div class="price">
+            <span>{{food.price|currency}}</span>
+        </div>
+
+        <button>Add To Cart</button>
     </div>
 </div>
