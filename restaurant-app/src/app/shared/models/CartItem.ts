@@ -1,6 +1,6 @@
 import { Food } from "./Food";
 
-export class cartItem{
+export class CartItem{
     constructor(food:Food){
         this.food = food;
     }
