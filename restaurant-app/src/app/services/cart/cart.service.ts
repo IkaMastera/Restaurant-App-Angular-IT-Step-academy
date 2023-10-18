@@ -9,7 +9,7 @@ import { CartItem } from 'src/app/shared/models/CartItem';
 export class CartService {
   private cart:Cart = new Cart();
   
-  addTocart(food:Food):void{
+  addToCart(food:Food):void{
     let cartItem = this.cart.items.find(item => item.food.id === food.id);
     if(cartItem){
       this.changeQuantity(food.id, cartItem.quantity + 1);
